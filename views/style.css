@@ -1,0 +1,126 @@
+/*
+*{
+	box-sizing: border-box;
+	font-family: consolas,sans-serif;
+	
+}
+
+body{ 
+	color: gray; 
+	background: beige;
+}
+
+table{ 
+	color: brown;
+}
+
+
+h1, h2{
+	color: purple; 
+}
+
+
+#myform{
+	max-width: 1000px;
+}
+*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif
+}
+
+body{
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: url("AZLSunMoonPink.png");
+	background-size: cover;
+}
+
+.container{
+	width: 100%;
+	max-width: 650px;
+	background: rgba(0, 0, 0, 0.5); 
+	padding: 28px;
+	margin: 0 28px;
+	border-radius: 10px;
+	box-shadow: inset -10px 10px 10px beige;
+}
+
+.form-title{
+	font-size: 26;
+	font-weight: 600;
+	text-align:	center;
+	padding-bottom: 10px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	border-bottom: solid 1px white;
+}
+
+.UserInfo{
+	display: flex;
+	/* flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0; */
+}
+
+.UserInfo label{
+	width: 95%;
+	color: white;
+	font-size: 15px;
+	font-weight: 400;
+	margin: 5px 0;
+}
+
+.UserInfo input{
+	height: 30px;
+	width:85%;
+	border-radius: 7px;
+	outline: none;
+	border: 1px solid grey;
+	padding: 0 10px;
+}
+
+.PersonalInformation:nth-child(2n){
+	justify-content: end;
+}
+
+.PersonalInformation{
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	padding-bottom: 15px; 
+}
+
+.UserInfo input{
+	height: 30px;
+	width:85%;
+	border-radius: 7px;
+	outline: none;
+	border: 1px solid grey;
+	padding: 0 10px;
+}
+
+.EmploymentInfo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.submitButton{
+	text-align:	center;
+	padding-bottom: 10px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	border-bottom: solid 1px white;
+}
+
+p{
+	color:white;
+	padding-top: 15px;
+}
